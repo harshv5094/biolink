@@ -1,0 +1,89 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 20%);
+  --dark-grey: hsl(0, 0%, 12%);
+  --off-black: hsl(0, 0%, 8%);
+}
+
+body {
+  background-color: var(--off-black);
+  height: 100vh;
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.link-container {
+  padding: 2em 0.5em;
+  width: 25em;
+  height: 35em;
+  background-color: var(--dark-grey);
+  border-radius: 1em;
+}
+
+img {
+  border-radius: 50%;
+  width: 7em;
+  height: 7em;
+}
+
+h1 {
+  margin: 0.6em 0em 0em 0em;
+  font-weight: 700;
+}
+
+h3 {
+  color: var(--green);
+  margin: 0.5em 0em 0em 0em;
+  font-weight: 600;
+}
+
+h4 {
+  font-weight: normal;
+  margin: 1.3em 0em 1.4em 0em;
+  font-weight: 400;
+}
+
+p {
+  font-size: 14px;
+}
+
+.media-button {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 600;
+  display: flex;
+  justify-content: space-around;
+  padding: 1em;
+  margin: 1em 2em;
+  border-radius: 0.8em;
+  background-color: var(--grey);
+  transition: background-color 0.4s ease-out;
+}
+
+.media-button:hover {
+  background-color: var(--green);
+  color: black;
+}
+
+@media only screen and (max-width: 375px) {
+  .link-container {
+    padding: 2em 0.5em;
+    width: 20em;
+    height: 34em;
+  }
+
+  img {
+    width: 6em;
+    height: 6em;
+  }
+
+  .media-button {
+    margin: 1em 0.5em;
+  }
+}
