@@ -1,6 +1,6 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  --green: hsl(75, 94%, 57%);
+  --primary: hsl(75, 94%, 57%);
   --white: hsl(0, 0%, 100%);
   --grey: hsl(0, 0%, 20%);
   --dark-grey: hsl(0, 0%, 12%);
@@ -37,7 +37,7 @@ h1 {
 }
 
 h3 {
-  color: var(--green);
+  color: var(--primary);
   margin: 0.5em 0em 0em 0em;
   font-weight: 600;
 }
@@ -64,11 +64,16 @@ p {
   border-radius: 0.8em;
   background-color: var(--grey);
   transition: background-color 0.4s ease-out;
+  transition: border 0.4 ease-out;
 }
 
 .media-button:hover {
-  background-color: var(--green);
+  background-color: var(--primary);
   color: black;
+}
+
+.media-button:focus {
+  border: 2px solid var(--white);
 }
 
 @media only screen and (max-width: 375px) {
